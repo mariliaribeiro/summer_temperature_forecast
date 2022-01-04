@@ -1,0 +1,19 @@
+name: venv
+channels:
+  - plotly
+  - conda-forge
+  - defaults
+dependencies:
+  - ipython=7.28 
+  - ipywidgets=7.6
+  - jupyter=1.0
+  - matplotlib=3.4
+  - numpy=1.19
+  - pandas=1.3
+  - pip 
+  - python=3.8
+  - scikit-learn=1.0
+  - plotly=4.14.3=py_0
+  - pip:
+    - tensorflow~=2.6.0
+    - seaborn
