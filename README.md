@@ -34,3 +34,42 @@ Neste notebook iremos utilizar um modelo de redes neurais recorrentes (RNN) do t
 | Solar radiation | Radiação solar de entrada diária (wh / m2): 4329,5 a 5992,9 |
 | Next_Tmax | A temperatura máxima do ar no dia seguinte (Â°C): 17,4 a 38,9 |
 | Next_Tmin | A temperatura mínima do ar no dia seguinte (Â°C): 11,3 a 29,8 |
+
+# Primeiros passos
+
+## Executando no google colab
+Este notebook também está disponível no [google colab](https://drive.google.com/file/d/1wcAnui0h1TaRtgVi6XMwGEcKuEiss61l/view?usp=sharing) para simplificar a criação e configuração de ambientes.
+
+Para executar o notebook no google colab é necessário baixar o arquivo `saved_model.tar.gz`  e fazer o upload no google colab em `Arquivos > Fazer upload para o armazenamento da sessão` conforme essa [imagem](https://i0.wp.com/neptune.ai/wp-content/uploads/colab-upload.png?resize=671%2C428&ssl=1).
+
+
+## Executando localmente
+Para executar localmente você deve clonar este repositório e extrair os arquivos da pasta `saved_model.tar.gz` no mesmo diretório. Depois basta seguir os seguintes passos:
+
+- Garanta que você tenha o miniconda e o aconda instalados. Se você não tiver basta seguir os passos do [tutorial da documentação](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+
+- Crie e ative um virtualenv com o conda. O arquivo environment.yml possui as dependêcias que serão instaladas ao criar o virualenv.
+
+```
+conda env create -f environment.yml
+
+conda create -n venv python
+
+conda activate venv
+```
+
+- Execute o comando `jupyter notebook` para abrir e executar o notebook no navegador.
+
+
+Caso você tenha algum problema, os pacotes requeridos são:
+```
+jupyterlab
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+ipywidgets
+scikit-learn
+tensorflow
+```
