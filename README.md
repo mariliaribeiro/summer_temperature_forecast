@@ -63,7 +63,7 @@ conda activate venv
 
 Caso você tenha algum problema, os pacotes requeridos são:
 ```
-jupyterlab
+jupyter
 pandas
 numpy
 matplotlib
